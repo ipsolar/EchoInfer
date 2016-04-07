@@ -1,0 +1,8 @@
+This program reads structured and unstructured data from excel sheet columns and give output in excel format. Each report should be in a separate row and the program reads one column at a time. This program used the apache POI API (poi-3.10-FINAL-20140208.jar.) from the publisher’s website (http://poi.apache.org/download.html). It can be directly downloaded using the link (http://archive.apache.org/dist/poi/release/bin/). 
+
+It calls Echo_ReadExcelXFile.java to read xlsx files. It uses one method a) calculate — to find mean of continuous value for a data element if present.
+
+To run the code:1. The input file must be in xlsx format. Provide pathname to variable “filename”.2. Provide specific details of the input file to variables such as total number of rows of input file in variable “numOfRows”, total number of columns of input file in variable “numOfInputCol”. 3. The output file will be xlsx file. Provide pathname to output file in variable “WritefileName”. 4. In the program section, LOOP OF CONCEPT EXTRACTION, in line 113 provide column number (excel starts columns from 0) to read from the input file. For example, to read the fourth column, check= arrRecords[i][3];
+
+Other Information:
+1.Variable “IndexCol” indicates the column number where program starts writing in the output file. 2.Variable “numOfPheno” indicates total number of data elements to be extracted. 3.Variable “addColPerPheno” add specific number of columns to each data element. 4.Variable “numOfOutputColumns” indicates total number of column in output file. 
